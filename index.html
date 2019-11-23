@@ -82,7 +82,10 @@ body .price{
                 <h5 class="card-title">{{product.0.product_name}}</h5>
                 <p class="card-text">{{product.0.product_desc}}.</p>
                 <p class="card-text price"><b>&#x20b9 {{product.0.price}}.</p>
+<<<<<<< HEAD
 
+=======
+>>>>>>> aedeacc59356af395f0d44d0d87bc457b7a6bfbf
                 <button id="pr{{product.0.id}}" class="btn btn-primary cart">Add to Cart</button>
             </div>
           </div>
@@ -96,7 +99,10 @@ body .price{
               <p class="card-text">{{i.desc|slice:"0:50"}}...</p>
               <p class="card-text price"><b>&#x20b9 {{i.price}}.</b></p>
               <span id="divpr{{i.id}}" class="divpr">
+<<<<<<< HEAD
 
+=======
+>>>>>>> aedeacc59356af395f0d44d0d87bc457b7a6bfbf
               <button id="pr{{i.id}}" class="btn btn-primary cart">Add to Cart</button></span>
                 <a href="/shop/products/{{i.id}}"<button id="qv{{i.id}}" class="btn btn-primary cart">Quick View</button></a>
             </div>
@@ -105,6 +111,7 @@ body .price{
           {% if forloop.counter|divisibleby:4 and forloop.counter > 0  and not forloop.last%}
       </div><div class="carousel-item">
           {%endif%}
+<<<<<<< HEAD
 
           {% endfor %}
     </div>
@@ -113,6 +120,12 @@ body .price{
 </div>
 </div>
 
+=======
+          {% endfor %}
+    </div>
+</div>
+</div>
+>>>>>>> aedeacc59356af395f0d44d0d87bc457b7a6bfbf
     <!-- left and right controls for the slide -->
     <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
         <span class="carousel-control-prev-icon"></span>
@@ -124,10 +137,15 @@ body .price{
     {% endfor%}
  </div>
  {% endblock %}
+<<<<<<< HEAD
 
 {% block js %}
 <script>
 
+=======
+{% block js %}
+<script>
+>>>>>>> aedeacc59356af395f0d44d0d87bc457b7a6bfbf
 if (localStorage.getItem('cart') == null) {
     var cart = {};
 } else {
@@ -212,8 +230,13 @@ $('.divpr').on("click", "button.plus", function() {
     document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
     updateCart(cart)
 });
+<<<<<<< HEAD
 
 
 </script>
 
 {% endblock %}
+=======
+</script>
+{% endblock %}
+>>>>>>> aedeacc59356af395f0d44d0d87bc457b7a6bfbf
