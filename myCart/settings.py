@@ -24,7 +24,7 @@ SECRET_KEY = 's0_&)kiev5s0%1n2kxo3160*dp7s7!&kc_f298sfcdq@g$xi^u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['daule1999.github.io']
 
 # Application definition
 
